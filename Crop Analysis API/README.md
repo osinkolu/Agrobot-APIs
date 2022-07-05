@@ -18,8 +18,7 @@ Accesss to the API is granted freely, there is no authentication put in place cu
         url, files=my_img, headers= {
         'threshold': threshold,
         'use_case': use_case
-        }
-        ) 
+        }) 
 ```
 
 ## API Versioning
