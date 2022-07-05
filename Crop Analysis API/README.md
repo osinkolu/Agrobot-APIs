@@ -38,8 +38,7 @@ Please note that the headers are important to pass the use case and the threshol
 ## HTTP Responses
 The response is very basic, for each detection, the API returns the position of the bounding boxes : left, right, top, bottom, prediction, probability of detection. Asides the list, the API also returns the message status and the number of detections found.
 
-```
-{
+```{
     "bounding_box_details": [
         [
             134,
