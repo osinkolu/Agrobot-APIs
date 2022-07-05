@@ -7,19 +7,19 @@ The crop analysis API is built to perfrom detections on an image based on the se
 Tutorial on how to use the API is coming soon, however, it is a simple to use API.
 
 ## Support
-For API support, please reach out on [linkedIn](https://www.linkedin.com/in/olufemi-victor-tolulope/) or [Twitter](https://twitter.com/Osinkoluolufemi).
+For API support, please reach out on [LinkedIn](https://www.linkedin.com/in/olufemi-victor-tolulope/) or [Twitter](https://twitter.com/Osinkoluolufemi).
 
 ## Basic Authentication
 
 Accesss to the API is granted freely, there is no authentication put in place currently
 
-'''POST
+'POST
     requests.post(
         url, files=my_img, headers= {
         'threshold': threshold,
         'use_case': use_case
         }
-        )'''
+        )'
 
 ## API Versioning
 There will be subsequent versions of this API as frameworks change, models update, use cases expand and as it gets better. However, the API version you wish to access in the format `v{version_number}`
@@ -38,7 +38,7 @@ Please note that the headers are important to pass the use case and the threshol
 ## HTTP Responses
 The response is very basic, for each detection, the API returns the position of the bounding boxes : left, right, top, bottom, prediction, probability of detection. Asides the list, the API also returns the message status and the number of detections found.
 
-'''
+'
 {
     "bounding_box_details": [
         [
@@ -61,7 +61,7 @@ The response is very basic, for each detection, the API returns the position of 
     "msg": "success",
     "number of predictions": 2
 }
-'''
+'
 
 
 ## HTTP Response Codes
