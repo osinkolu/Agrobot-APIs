@@ -19,7 +19,8 @@ Accesss to the API is granted freely, there is no authentication put in place cu
         'threshold': threshold,
         'use_case': use_case
         }
-        ) ```
+        ) 
+```
 
 ## API Versioning
 There will be subsequent versions of this API as frameworks change, models update, use cases expand and as it gets better. However, the API version you wish to access in the format `v{version_number}`
@@ -60,8 +61,8 @@ The response is very basic, for each detection, the API returns the position of 
     ],
     "msg": "success",
     "number of predictions": 2
-} ```
-
+}
+```
 ## HTTP Response Codes
 Each response will be returned with one of the following HTTP status codes:
 
