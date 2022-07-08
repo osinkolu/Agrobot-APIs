@@ -1,6 +1,0 @@
-flask
-numpy
-pillow
-tensorflow-cpu
-tflite-support==0.3.1
-gunicorn==19.9.0
