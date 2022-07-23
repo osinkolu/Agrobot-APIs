@@ -24,8 +24,7 @@ Accesss to the API is granted freely, there is no authentication put in place cu
 ## API Versioning
 There will be subsequent versions of this API as frameworks change, models update, use cases expand and as it gets better. However, the API version you wish to access in the format `v{version_number}`
 
-Currently version 1 of the API (most current) is accessible via:
-........................
+Currently version 1 of the API (most current) is accessible via: https://agrobotfarms-api-v1.azurewebsites.net/
 
 ## HTTP requests
 All API requests are made by sending a secure HTTPS request using one of the following methods, depending on the action being taken:
