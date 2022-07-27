@@ -49,6 +49,16 @@ The API has been deployed on Azure with CI-CD. It is accessible via: https://agr
         ]                           }
                     ) 
 ```
+## Definitions
+
+"N" - Nitrogen level in the soil
+"P"  - Phosporus level in the soil
+"K" - Potassium level in the soil
+"Temperature" - The current temperature of the surroundings in degree celcius.
+"Humidiy" - Relative humidity.
+"PH" - The PH value of the soil
+"rainfall" - the rainfall value in mm
+
 ## API Versioning
 There will be subsequent versions of this API as frameworks change, models update, use cases expand and as it gets better. However, the API version you wish to access in the format `v{version_number}`
 
@@ -75,6 +85,9 @@ Each response will be returned with one of the following HTTP status codes:
 * `404` `Not found` An attempt was made to access a resource that does not exist in the API
 * `405` `Method not allowed` The resource being accessed doesn't support the method specified (GET, POST, etc.).
 * `500` `Server Error` An error on the server occurred
+
+## Dataset Used to build model.
+Dataset is Openly Available on Kaggle - https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset. It was curated for the indian agricultural context. 
 
 ## Model Information(coming soon):
 
