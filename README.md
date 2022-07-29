@@ -15,7 +15,7 @@ Accesss to the API is granted freely, there is no authentication put in place cu
 
 ``` POST
     requests.post(
-        url, files=my_img, headers= {
+        url, files=my_img.jpg, headers= {
         'threshold': 0.5,
         'use_case': 'crop_disease'
         }) 
