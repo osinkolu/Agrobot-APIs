@@ -65,17 +65,13 @@ Format 2 is the lazy-format, we do everything for you, all you need to do is pro
 1. "/predict"
 returns the predicted plant to buy as a list:
 Sample Output 
-```
-["rice"]
-
+```["rice"]
 ```
 
 2. "/easy_predict"
 returns the predicted plant to buy as a list:
 Sample Output
-```
-["rice"]
-
+```["rice"]
 ```
 
 3. "/data_dump"
