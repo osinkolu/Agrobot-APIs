@@ -155,13 +155,13 @@ returns a heavy json dump of all the data tracked at the backend.
 
 ## Core Definitions
 
-"N" - Nitrogen level in the soil
-"P"  - Phosporus level in the soil
-"K" - Potassium level in the soil
-"Temperature" - The current temperature of the surroundings in degree celcius.
-"Humidiy" - Relative humidity.
-"PH" - The PH value of the soil
-"rainfall" - the rainfall value in mm
+* "N" - Nitrogen level in the soil
+* "P"  - Phosporus level in the soil
+* "K" - Potassium level in the soil
+* "Temperature" - The current temperature of the surroundings in degree celcius.
+* "Humidiy" - Relative humidity.
+* "PH" - The PH value of the soil
+* "rainfall" - the rainfall value in mm
 
 ## API Versioning
 There will be subsequent versions of this API as frameworks change, models update, use cases expand and as it gets better. However, the API version you wish to access in the format `v{version_number}`
