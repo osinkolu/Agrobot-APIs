@@ -1,6 +1,2 @@
-flask
-numpy
-pillow
-tensorflow-cpu
-tflite-support==0.3.1
-gunicorn==19.9.0
+googletrans==4.0.0-rc1
+google-search-results
