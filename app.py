@@ -30,7 +30,7 @@
 
 from flask import Flask, request
 from classifier import classify
-#import pandas as pd
+import pandas as pd
 #import json
 #import requests
 
@@ -38,7 +38,7 @@ Open_weathermaps_api_key = "253c41dfcc642a2a76ef235ad92ab00c"
 
 #os.environ['Open_weathermaps_api_key']
 #print(Open_weathermaps_api_key)
-#all_data = pd.read_csv("Victor_Nigerian_soil_database.csv")
+all_data = pd.read_csv("Victor_Nigerian_soil_database.csv")
 
 def get_parameters(coordinates,all=False):
     nearest_coordinates = get_nearest_coordinates(coordinates)
