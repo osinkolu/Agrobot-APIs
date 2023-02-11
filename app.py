@@ -31,7 +31,7 @@
 import json
 from flask import Flask, request
 from classifier import classify
-#from easy_predict_helper import easy_parameter_finders
+from easy_predict_helper import *
 
 app = Flask(__name__)
 @app.route('/')
