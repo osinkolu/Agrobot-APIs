@@ -48,8 +48,7 @@ def easy_predict():
     data = request.get_json(force=True)
     coordinates = (data['lat'], data['lon'])
     print(coordinates)
-    easy = easy_parameter_finders()
-    raw_data = easy.collate_data(coordinates)
+    raw_data = collate_data(coordinates)
     return (classify(raw_data))
 
 @app.route("/data_dump", methods=["GET", "POST"])
@@ -57,8 +56,7 @@ def data_dump():
     data = request.get_json(force=True)
     coordinates = (data['lat'], data['lon'])
     print(coordinates)
-    easy = easy_parameter_finders()
-    raw_data = easy.dump_all_data(coordinates)
+    raw_data = dump_all_data(coordinates)
     return (raw_data)
 
 
