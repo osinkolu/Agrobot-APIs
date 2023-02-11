@@ -13,7 +13,7 @@
     
 """
 from settings import model_influencer
-from search_and_translate import search_and_translate, translate_alone
+#from search_and_translate import search_and_translate, translate_alone
 from flask import Flask,request
 
 
