@@ -18,13 +18,46 @@
         ]
 }
 """
+# Lazy Format
+"""
+{
+    "lat":7.4905, 
+    "lon":4.5521
+}
+"""
 
+import json
 from flask import Flask,request
+from classifier import classify
+from easy_predict_helper import easy_parameter_finders
 
 app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return("Welcome, please smile more")
+
+@app.route("/predict", methods=["GET", "POST"])
+def predict():
+    raw_data = request.get_json(force=True)
+    return (classify(raw_data))
+
+@app.route("/easy_predict", methods=["GET", "POST"])
+def easy_predict():
+    data = request.get_json(force=True)
+    coordinates = (data['lat'], data['lon'])
+    print(coordinates)
+    easy = easy_parameter_finders()
+    raw_data = easy.collate_data(coordinates)
+    return (classify(raw_data))
+
+@app.route("/data_dump", methods=["GET", "POST"])
+def data_dump():
+    data = request.get_json(force=True)
+    coordinates = (data['lat'], data['lon'])
+    print(coordinates)
+    easy = easy_parameter_finders()
+    raw_data = easy.dump_all_data(coordinates)
+    return (raw_data)
 
 
 if __name__ =="__main__":
