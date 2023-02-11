@@ -30,7 +30,7 @@
 
 import json
 from flask import Flask, request
-#from classifier import classify
+from classifier import classify
 #from easy_predict_helper import easy_parameter_finders
 
 app = Flask(__name__)
