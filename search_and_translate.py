@@ -10,11 +10,12 @@ Helper script with functions to call google's seach and translate libraries.
 
 from serpapi import GoogleSearch
 from googletrans import Translator
+import os
 
-api_key = "b1901bbcc4f4e6e021fb6814e54e330e214b6f92b7718e24f46ec69c546942ab"#os.environ['my_api_key'] # key already stored as a secret on Cloud and mapped in workflow
+api_key = os.environ['my_api_key'] # key already stored as a secret on Cloud and mapped in workflow
 
-#translator = Translator()
-def search_and_translate(search_string, dest_language, api_key=api_key):
+translator = Translator()
+def search_and_translate(search_string, dest_language):
   params = {
     "q": search_string,
     "hl": "en",
