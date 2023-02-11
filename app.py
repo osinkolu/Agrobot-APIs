@@ -31,8 +31,8 @@
 from flask import Flask, request
 from classifier import classify
 import pandas as pd
-#import json
-#import requests
+import json
+import requests
 
 Open_weathermaps_api_key = "253c41dfcc642a2a76ef235ad92ab00c" 
 
