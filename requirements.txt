@@ -1,4 +1,4 @@
-googletrans==4.0.0-rc1
 google-search-results
+googletrans==4.0.0-rc1
 Flask
 requests<2.11.0
