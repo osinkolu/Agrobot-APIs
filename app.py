@@ -13,7 +13,7 @@
     
 """
 from settings import model_influencer
-#from search_and_translate import search_and_translate, translate_alone
+from search_and_translate import search_and_translate, translate_alone
 from flask import Flask,request
 
 
@@ -48,11 +48,11 @@ def help_me():
     try:
         second_text = translate_alone(support.string2 + main_word, language)
     except Exception:
-        return("could not process first text of my response")
+        return("could not process first the second of my response")
     try:
         third_text = search_and_translate(support.string3 + main_word,language)
     except Exception:
-        return("could not process first text of my response")
+        return("could not process the third text of my response")
     reply = { 
         "about": first_text,
         "extra_topic": second_text,
