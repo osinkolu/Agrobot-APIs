@@ -1,30 +1,16 @@
-# Crop Recommendation API
+# FarmX - Crop Recommendation API
 
 ## Introduction
-This is a flask API that recommends what kind of crop to plant, this project is part of the Agrobot project to provide A.I tools to farmers.
+This is a flask API that recommends what kind of crop to plant, this project is part of a larger project to provide A.I tools to farmers.
 
 ### Dependencies
 
 * [Python](https://www.python.org/) - Programming Language
-* [Docker](www.docker.com) - Containerization
 * [Flask](https://flask.palletsprojects.com/) - The framework used
 * [Pip](https://pypi.org/project/pip/) - Dependency Management
 * [RESTful](https://restfulapi.net/) - REST docs
 
-### Virtual environments
 
-```
-$ sudo apt-get install python-virtualenv
-$ python3 -m venv venv
-$ . venv/bin/activate
-$ pip install Flask
-```
-
-Install all project dependencies using:
-
-```
-$ pip install -r requirements.txt
-```
 ## Support
 For API support, please reach out on [LinkedIn](https://www.linkedin.com/in/olufemi-victor-tolulope/) or [Twitter](https://twitter.com/Osinkoluolufemi).
 
@@ -32,11 +18,11 @@ For API support, please reach out on [LinkedIn](https://www.linkedin.com/in/oluf
 
 Accesss to the API is granted freely, there is no authentication put in place currently
 
-The API has been deployed on AWS via Elastic Beanstalk. It is accessible via: http://crop-recommendation-environment.eba-2rwziixn.eu-west-1.elasticbeanstalk.com/ you'll need to post your input Json format and select the endpoint you need. 
+The API has been deployed on **GCP** with CI-CD. It is accessible via: https://croprecommendation-zc6ytsujkq-uw.a.run.app/ you'll need to post your input Json format. 
 
 There are two formats.
 
-Format one is when you provide all the data, below is the sample of the request we expect.
+* Format one is when you provide all the data, below is the sample of the request we expect.
 
 ``` {
 "raw_values":[
@@ -53,7 +39,7 @@ Format one is when you provide all the data, below is the sample of the request 
     }
 ```
 
-Format 2 is the lazy-format, we do everything for you, all you need to do is provide the longitude and lagitude.
+* Format 2 is the lazy-format, we do everything for you, all you need to do is provide the longitude and lagitude.
 
 
 {
@@ -63,24 +49,19 @@ Format 2 is the lazy-format, we do everything for you, all you need to do is pro
     
 
 ### EndPoints.
-1. "/" - Allows "GET" request to test the API. It always returns the same thing:
-* Output: 
- "Welcome, please smile more".
-
-2. "/predict"
+1. `/predict`
 returns the predicted plant to buy as a list:
-* Sample Output: 
+Sample Output 
 ["rice"]
 
-3. "/easy_predict"
+2. `/easy_predict`
 returns the predicted plant to buy as a list:
-* Sample Output: 
+Sample Output
 ["rice"]
 
 
-4. "/data_dump"
+3. `/data_dump`
 returns a heavy json dump of all the data tracked at the backend.
-* Sample Output
 
 ```
 {
@@ -172,9 +153,8 @@ returns a heavy json dump of all the data tracked at the backend.
 ## API Versioning
 There will be subsequent versions of this API as frameworks change, models update, use cases expand and as it gets better. However, the API version you wish to access in the format `v{version_number}`
 
-Currently version x of the API (most current) is accessible via:
-
-[this link](http://crop-recommendation-environment.eba-2rwziixn.eu-west-1.elasticbeanstalk.com/)
+Currently version 1 of the API (most current) is accessible via:
+[this link](https://agrobotfarms-crop-rec-api-v1.azurewebsites.net/predict)
 
 ## HTTP requests
 All API requests are made by sending a secure HTTPS request using one of the following methods, depending on the action being taken:

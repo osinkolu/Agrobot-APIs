@@ -14,8 +14,3 @@ COPY ["models/classifier.py","models/catboost_model.pkl","./models/"]
 EXPOSE 8080
 
 ENTRYPOINT ["gunicorn", "--bind=0.0.0.0:8080", "app:app"]
-
-
-
-
-

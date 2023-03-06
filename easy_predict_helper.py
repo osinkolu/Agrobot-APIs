@@ -13,9 +13,10 @@ import json
 import os
 import requests
 
-Open_weathermaps_api_key = "253c41dfcc642a2a76ef235ad92ab00c" #os.environ["Open_weathermaps_api_key"]
-#print(Open_weathermaps_api_key)
+Open_weathermaps_api_key = "2f5e2e8666c3aee09073507960194baa"
 
+#os.environ["Open_weathermaps_api_key"]
+#print(Open_weathermaps_api_key)
 
 all_data = pd.read_csv("Victor_Nigerian_soil_database.csv")
 
