@@ -1,4 +1,4 @@
-# FarmX - Crop Recommendation API
+# AgrobotFarms - Crop Recommendation API
 
 ## Introduction
 This is a flask API that recommends what kind of crop to plant, this project is part of a larger project to provide A.I tools to farmers.
